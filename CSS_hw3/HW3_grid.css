@@ -1,0 +1,316 @@
+.control{
+    width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(20, 50px);
+}
+.control .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    z-index: 2;
+    grid-area: 2/1/9/7;
+}
+.control .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.control .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.control .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.control .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.control img{
+    width: 695px;
+    height: 430px;
+    grid-area: 6/4/15/14;
+    z-index: 1;
+}
+.control .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    grid-area: 4/11/8/20;
+    z-index: 0;
+}
+.control .txt{
+    width: 658px;
+    background-color: #ccc;
+    z-index: 2;
+    padding: 20px;
+    grid-area: 14/2/20/16;
+}
+.control .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.control .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.control .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.control a{
+    z-index: 2;
+    grid-area: 10/17/11/18;
+}
+.control .youtube img{
+    width: 57px;
+    height: 36px;
+}
+
+
+.safe{
+    width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(20, 50px);
+}
+.safe .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    z-index: 2;
+    grid-area: 2/15/9/21;
+}
+.safe .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.safe .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.safe .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.safe .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.safe img{
+    width: 695px;
+    height: 430px;
+    grid-area: 6/4/15/14;
+    z-index: 1;
+}
+.safe .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    z-index: 0;
+    grid-area: 4/8/8/15;
+}
+.safe .txt{
+    width: 658px;
+    background-color: #ccc;
+    z-index: 2;
+    padding: 20px;
+    grid-area: 13/7/17/21;
+}
+.safe .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.safe .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.safe .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.safe a{
+    z-index: 2;
+    grid-area: 10/4/11/5;
+}
+
+.safe .youtube img{
+    width: 57px;
+    height: 36px;
+}
+
+
+.comfortable{
+    width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(20, 50px);
+}
+.comfortable .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    z-index: 2;
+    grid-area: 2/1/9/7;
+}
+.comfortable .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.comfortable .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.comfortable .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.comfortable .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.comfortable img{
+    width: 695px;
+    height: 430px;
+    grid-area: 6/4/15/14;
+    z-index: 1;
+}
+.comfortable .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    grid-area: 4/11/8/20;
+    z-index: 0;
+}
+.comfortable .txt{
+    width: 658px;
+    background-color: #ccc;
+    z-index: 2;
+    padding: 20px;
+    grid-area: 14/2/20/16;
+}
+.comfortable .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.comfortable .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.comfortable .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.comfortable a{
+    z-index: 2;
+    grid-area: 10/17/11/18;
+}
+.comfortable .youtube img{
+    width: 57px;
+    height: 36px;
+}
+
+
+.people{
+    width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(20, 50px);
+}
+.people .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    z-index: 2;
+    grid-area: 2/15/9/21;
+}
+.people .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.people .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.people .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.people .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.people img{
+    width: 695px;
+    height: 430px;
+    grid-area: 6/4/15/14;
+    z-index: 1;
+}
+.people .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    z-index: 0;
+    grid-area: 4/8/8/15;
+}
+.people .txt{
+    width: 658px;
+    background-color: #ccc;
+    z-index: 2;
+    padding: 20px;
+    grid-area: 13/7/17/21;
+}
+.people .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.people .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.people .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.people a{
+    z-index: 2;
+    grid-area: 10/4/11/5;
+}
+
+.people .youtube img{
+    width: 57px;
+    height: 36px;
+}

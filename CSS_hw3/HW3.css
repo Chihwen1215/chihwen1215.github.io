@@ -1,0 +1,367 @@
+.control{
+    margin: 200px 0;
+}
+.control .wrap{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+.control .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    left: 0px;
+}
+.control .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.control .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.control .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.control .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.control img{
+    width: 695px;
+    height: 430px;
+    position: relative;
+    z-index: 1;
+}
+.control .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    position: absolute;
+    z-index: 0;
+    top: -80px;
+    right: 80px;
+}
+.control .txt{
+    width: 658px;
+    /* height: 280px; */
+    background-color: #ccc;
+    position: relative;
+    z-index: 2;
+    left: -120px;
+    bottom: 80px;
+    padding: 20px;
+}
+.control .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.control .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.control .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.control a{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+.control .youtube img{
+    width: 57px;
+    height: 36px;
+}
+
+
+.safe{
+    margin: 300px 0;
+}
+.safe .wrap{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+.safe .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    right: 0px;
+}
+.safe .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.safe .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.safe .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.safe .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.safe img{
+    width: 695px;
+    height: 430px;
+    position: relative;
+    z-index: 1;
+}
+.safe .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    position: absolute;
+    z-index: 0;
+    top: -50px;
+    right: 200px;
+}
+.safe .txt{
+    width: 658px;
+    background-color: #ccc;
+    position: relative;
+    z-index: 2;
+    right: -152px;
+    bottom: 80px;
+    padding: 20px;
+}
+.safe .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.safe .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.safe .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.safe a{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.safe .youtube img{
+    width: 57px;
+    height: 36px;
+}
+
+
+.comfortable{
+    margin: 300px 0;
+}
+.comfortable .wrap{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+.comfortable .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    left: 0px;
+}
+.comfortable .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.comfortable .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.comfortable .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.comfortable .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.comfortable img{
+    width: 695px;
+    height: 430px;
+    position: relative;
+    z-index: 1;
+}
+.comfortable .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    position: absolute;
+    z-index: 0;
+    top: -80px;
+    right: 80px;
+}
+.comfortable .txt{
+    width: 658px;
+    /* height: 280px; */
+    background-color: #ccc;
+    position: relative;
+    z-index: 2;
+    left: -120px;
+    bottom: 80px;
+    padding: 20px;
+}
+.comfortable .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.comfortable .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.comfortable .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.comfortable a{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+.comfortable .youtube img{
+    width: 57px;
+    height: 36px;
+}
+
+.people{
+    margin: 300px 0;
+}
+.people .wrap{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+.people .headline{
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    right: 0px;
+}
+.people .headline h2{
+    background-color: red;
+    font-size: 35px;
+}
+.people .headline h2 span{
+    font-size: 80px;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+}
+.people .headline h3{
+    font-size: 20px;
+    padding: 30px 10px 10px;
+}
+.people .headline p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 30px;
+}
+.people img{
+    width: 695px;
+    height: 430px;
+    position: relative;
+    z-index: 1;
+}
+.people .gray{
+    width: 440px;
+    height: 200px;
+    background-color: #eeeeee;
+    position: absolute;
+    z-index: 0;
+    top: -50px;
+    right: 200px;
+}
+.people .txt{
+    width: 658px;
+    background-color: #ccc;
+    position: relative;
+    z-index: 2;
+    right: -152px;
+    bottom: 80px;
+    padding: 20px;
+}
+.people .txt h4{
+    color: red;
+    font-size: 17px;
+    line-height: 2;
+}
+.people .txt h5{
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+.people .txt ul{
+    font-size: 15px;
+    line-height: 2;
+}
+.people a{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.people .youtube img{
+    width: 57px;
+    height: 36px;
+}
