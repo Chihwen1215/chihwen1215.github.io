@@ -80,6 +80,12 @@
     font-size: 15px;
     line-height: 2;
 }
+.control .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
+}
 .control a{
     position: absolute;
     top: 200px;
@@ -171,6 +177,12 @@
 .safe .txt ul{
     font-size: 15px;
     line-height: 2;
+}
+.safe .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
 }
 .safe a{
     position: absolute;
@@ -265,6 +277,12 @@
     font-size: 15px;
     line-height: 2;
 }
+.comfortable .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
+}
 .comfortable a{
     position: absolute;
     top: 200px;
@@ -355,6 +373,12 @@
 .people .txt ul{
     font-size: 15px;
     line-height: 2;
+}
+.people .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
 }
 .people a{
     position: absolute;
