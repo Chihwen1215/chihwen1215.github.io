@@ -67,6 +67,12 @@
     font-size: 15px;
     line-height: 2;
 }
+.control .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
+}
 .control a{
     z-index: 2;
     grid-area: 10/17/11/18;
@@ -146,9 +152,17 @@
     font-size: 15px;
     line-height: 2;
 }
+.safe .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
+}
 .safe a{
     z-index: 2;
     grid-area: 10/4/11/5;
+    display: block;
+    text-align: right;
 }
 
 .safe .youtube img{
@@ -225,6 +239,12 @@
 .comfortable .txt ul{
     font-size: 15px;
     line-height: 2;
+}
+.comfortable .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
 }
 .comfortable a{
     z-index: 2;
@@ -305,9 +325,17 @@
     font-size: 15px;
     line-height: 2;
 }
+.people .txt ul li::before{
+    content: '■';
+    color: red;
+    padding-right: 5px;
+    font-size: 1px;
+}
 .people a{
     z-index: 2;
     grid-area: 10/4/11/5;
+    display: block;
+    text-align: right;
 }
 
 .people .youtube img{
