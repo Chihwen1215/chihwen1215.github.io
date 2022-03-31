@@ -160,7 +160,7 @@
 }
 .safe a{
     z-index: 2;
-    grid-area: 10/4/11/5;
+    grid-area: 10/3/11/5;
     display: block;
     text-align: right;
 }
@@ -333,7 +333,7 @@
 }
 .people a{
     z-index: 2;
-    grid-area: 10/4/11/5;
+    grid-area: 10/3/11/5;
     display: block;
     text-align: right;
 }
