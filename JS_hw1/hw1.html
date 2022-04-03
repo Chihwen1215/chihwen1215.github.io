@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        .wrap{
+            width: 960px;
+            margin: auto;
+            border: 3px solid #ccc;
+        }
+        .wrap .pic{
+            border-bottom: 3px solid #ccc;
+            display: flex;
+            justify-content: center;
+        }
+        .wrap .info{
+            border-bottom: 3px solid #ccc;
+            padding-left: 50px;
+        }
+        .shot{
+            width: 300px;
+            height: 300px;
+        }
+        .picThree{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: space-around;
+        }
+        .picThree .one,.two,.three{
+            padding: 0 5px;
+            width: 288px;
+            height: 288px;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="wrap">
+        <div class="pic">
+            <img class="shot" id="shot" src="" alt="頭貼">
+        </div>
+        <div class="info">
+            <h3>姓名：</h3>
+            <p></p>
+            <h3>Email：</h3> 
+            <p></p>
+            <h3>學校：</h3>  
+            <p></p>
+            <h3>興趣：</h3>    
+            <p></p>     
+        </div>
+        <div class="picThree">
+            <div class="item">
+                <img class="one" src="" alt="照片1">
+                <img class="two" src="" alt="照片2">
+                <img class="three" src="" alt="照片3">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let p = document.querySelectorAll("p");
+        let content = ["盧致文", "xxx@gmail.com", "ooxx", "瑜珈"];
+        let img = document.getElementById("shot");
+        let picAll = document.querySelectorAll(".picThree img");
+        
+        const imgUrl = "https://raw.githubusercontent.com/chihwen1215/FileStorage/main/%E9%A0%AD%E5%83%8F.jpg";
+
+        img.src = imgUrl;
+        content.forEach((x, index)=>{p[index].innerText = content[index]});
+
+        const picArray = [
+            "https://raw.githubusercontent.com/chihwen1215/FileStorage/main/2.jpg",
+            "https://raw.githubusercontent.com/chihwen1215/FileStorage/main/1.jpg",
+            "https://raw.githubusercontent.com/chihwen1215/FileStorage/main/3.jpg",
+        ];
+
+        picArray.forEach((x, index)=>{picAll[index].setAttribute("src", picArray[index])});
+
+    </script>
+    
+</body>
+</html>
