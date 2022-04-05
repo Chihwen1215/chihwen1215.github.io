@@ -140,13 +140,27 @@
     text-align: center;
     color: #fff;
     padding: 10px;
+    line-height: calc(5px + 2ex + 5px);
 }
 .banner .txt h1{
     font-size: 30px;
+    line-height: 1.2;
 }
 .banner .txt p{
     font-size: 16px;
 }
+.banner .free{
+    background-color: #0061FF;
+    border-radius: 30px;
+    padding: 8px 17px;
+    text-align: center;
+}
+.banner .free{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
 
 
 .title{
@@ -182,18 +196,22 @@
 .service h3{
     text-align: center;
     font-size: 35px;
+    font-weight: bold;
     padding: 40px 0;
 }
 .service section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    
+    justify-content: space-between;
+    padding: 0 20px; 
 }
 .service .item{
-    padding: 0 30px;
     text-align: center;
+    width: calc((100% - 60px) / 2);
+    margin-bottom: 60px;
+}
+.service .item:nth-of-type(2n+1){
+    margin-left: 0;
 }
 .service section img{
     background-color: #fff;
@@ -201,12 +219,12 @@
 }
 .service section h4{
     font-size: 20px;
-    line-height: 2;
 }
 .service section .item p{
     font-size: 16px;
-    line-height: 2;
-    padding-bottom: 10px;
-    text-align: left;
+    text-align: justify;
+}
+.service .wrap{
+    line-height: calc(5px + 2ex + 5px);
 }
 
