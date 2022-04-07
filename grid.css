@@ -78,36 +78,36 @@
 }
 
 
-.row-col-1 > .col{ width: 100%; }
-.row-col-2 > .col{ width: 50%; }
-.row-col-3 > .col{ width: 33.333333%; }
-.row-col-4 > .col{ width: 25%; }
-.row-col-5 > .col{ width: 20%; }
-.row-col-6 > .col{ width: 16.666666%; }
+.row-cols-1 > .col{ width: 100%; }
+.row-cols-2 > .col{ width: 50%; }
+.row-cols-3 > .col{ width: 33.333333%; }
+.row-cols-4 > .col{ width: 25%; }
+.row-cols-5 > .col{ width: 20%; }
+.row-cols-6 > .col{ width: 16.666666%; }
 
 @media screen and (min-width:768px) {
-    .row-col-md-1 > .col{ width: 100%; }
-    .row-col-md-2 > .col{ width: 50%; }
-    .row-col-md-3 > .col{ width: 33.333333%; }
-    .row-col-md-4 > .col{ width: 25%; }
-    .row-col-md-5 > .col{ width: 20%; }
-    .row-col-md-6 > .col{ width: 16.666666%; }
+    .row-cols-md-1 > .col{ width: 100%; }
+    .row-cols-md-2 > .col{ width: 50%; }
+    .row-cols-md-3 > .col{ width: 33.333333%; }
+    .row-cols-md-4 > .col{ width: 25%; }
+    .row-cols-md-5 > .col{ width: 20%; }
+    .row-cols-md-6 > .col{ width: 16.666666%; }
 }
 
 @media screen and (min-width:992px) {
-    .row-col-lg-1 > .col{ width: 100%; }
-    .row-col-lg-2 > .col{ width: 50%; }
-    .row-col-lg-3 > .col{ width: 33.333333%; }
-    .row-col-lg-4 > .col{ width: 25%; }
-    .row-col-lg-5 > .col{ width: 20%; }
-    .row-col-lg-6 > .col{ width: 16.666666%; }
+    .row-cols-lg-1 > .col{ width: 100%; }
+    .row-cols-lg-2 > .col{ width: 50%; }
+    .row-cols-lg-3 > .col{ width: 33.333333%; }
+    .row-cols-lg-4 > .col{ width: 25%; }
+    .row-cols-lg-5 > .col{ width: 20%; }
+    .row-cols-lg-6 > .col{ width: 16.666666%; }
 }
 
 @media screen and (min-width:1200px) {
-    .row-col-xl-1 > .col{ width: 100%; }
-    .row-col-xl-2 > .col{ width: 50%; }
-    .row-col-xl-3 > .col{ width: 33.333333%; }
-    .row-col-xl-4 > .col{ width: 25%; }
-    .row-col-xl-5 > .col{ width: 20%; }
-    .row-col-xl-6 > .col{ width: 16.666666%; }
+    .row-cols-xl-1 > .col{ width: 100%; }
+    .row-cols-xl-2 > .col{ width: 50%; }
+    .row-cols-xl-3 > .col{ width: 33.333333%; }
+    .row-cols-xl-4 > .col{ width: 25%; }
+    .row-cols-xl-5 > .col{ width: 20%; }
+    .row-cols-xl-6 > .col{ width: 16.666666%; }
 }

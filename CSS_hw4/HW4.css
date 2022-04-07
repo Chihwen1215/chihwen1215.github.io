@@ -180,6 +180,22 @@
         background-color: transparent;
         flex-grow: 1;
     }
+    .menu .free{
+        display: inline-block ;
+        background-color: blue;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+    .menu .free a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .menu nav a{
+        padding: 0 10px;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -200,7 +216,7 @@
         background-color: transparent;
         flex-grow: 1;
     } */
-    .menu .free{
+    /* .menu .free{
         display: inline-block ;
         background-color: blue;
         border-radius: 10px;
@@ -214,7 +230,7 @@
     }
     .menu nav a{
         padding: 0 10px;
-    }
+    } */
     .banner{
         width: 100%;
         padding: 120px 0;
