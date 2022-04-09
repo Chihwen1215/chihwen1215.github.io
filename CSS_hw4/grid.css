@@ -1,3 +1,8 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 [class*='col-'] > .col , [class*='col-']{
     padding-left: var(--gap);
     padding-right: var(--gap);

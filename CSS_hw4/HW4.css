@@ -111,7 +111,7 @@
     bottom: 10px;
     text-align: center;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     line-height: calc(5px + 2ex + 5px);
     font-weight: bold;
 }
@@ -136,10 +136,10 @@
 
 .title{
     background-color: #fff;
-    /* width: 1200px; */
+    max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 10px;
+    /* padding: 0 20px; */
 }
 .title h2{
     font-size: 28px;
@@ -150,8 +150,8 @@
 .title p{
     font-size: 16px;
     line-height: 2;
-    padding: 0 10px;
-    padding-bottom: 70px;
+    padding: 0 20px;
+    padding-bottom: 30px;
 }
 
 
@@ -191,6 +191,89 @@
 .about .txt a{
     color: blue;
 }
+
+
+.service{
+    background-color: #f4f5f7;
+}
+.service .wrap{
+    max-width: 1200px;
+    margin: auto;
+}
+.service h3{
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    padding: 70px 0 40px;
+    font-weight: bold;
+}
+.service section img{
+    background-color: #fff;
+    border-radius: 50%;
+}
+.service section h4{
+    font-size: 20px;
+    line-height: 2;
+}
+.service section{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.service .item{
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 20px;
+}
+.service .item p{
+    font-size: 16px;
+    line-height: calc(5px + 2ex + 5px);
+    text-align: left;
+}
+
+
+.brand .row{
+    display: none;
+}
+.brand h3{
+    font-size: 26px;
+    text-align: center;
+    padding: 40px 0 30px;
+    font-weight: bold;
+}
+.brand h3 span{
+    color: #0061FF;
+}
+.brand .item{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.brand .item .txt a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #0061FF;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.brand .item .txt p{
+    font-size: 16px;
+    line-height: 2;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+.brand .pic img{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
 
 
 
@@ -252,6 +335,9 @@
     .menu nav a{
         padding: 0 10px;
     }
+    .logo img{
+        margin-left: -10px;
+    }
     .banner{
         width: 100%;
         padding: 120px 0;
@@ -266,7 +352,7 @@
     .banner .txt{
         text-align: left;
         margin: 80px 0;
-        padding: 10px;
+        padding: 10px 10px 10px 0;
     }
     .banner .wrap h1{
         margin: 0 0 20px
@@ -295,6 +381,40 @@
     .about .wrap .row:nth-child(even) .txt{
         text-align: left;
     }
+    .service .wrap{
+        width: 960px;
+    }
+    .service section{
+        /* width: 100%; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .brand{
+        width: 960px;
+        margin: auto;
+    }
+    .brand .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .brand .row li{
+        width: 20%;
+    }
+    .brand .row li img{
+        display: block;
+        margin: auto;
+    }
+    .brand .item{
+        flex-direction: row-reverse;
+        margin: 0 -20px;
+    }
+
+    
+
 
 }
 
@@ -313,5 +433,11 @@
     .about .wrap{
         width: 1200px;
     }
-
+    .service .wrap{
+        width: 1200px;
+    }
+    .brand{
+        width: 1200px;
+    }
+    
 }
