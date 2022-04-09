@@ -90,21 +90,12 @@
     border-bottom: 1px solid black;
 }
 .menu .free{
-    /* display: inline-block ;
-    background-color: blue;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px; */
     display: none;
 }
-/* .menu .free a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-} */
 #menu_control:checked ~ .header .menu nav{
     left: 0;
 }
+
 
 .banner{
     background-color: #00142d;
@@ -122,10 +113,11 @@
     color: #fff;
     padding: 10px;
     line-height: calc(5px + 2ex + 5px);
+    font-weight: bold;
 }
 .banner .txt h1{
     font-size: 30px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 .banner .txt p{
     font-size: 16px;
@@ -142,7 +134,63 @@
     font-size: 15px;
 }
 
+.title{
+    background-color: #fff;
+    /* width: 1200px; */
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.title h2{
+    font-size: 28px;
+    line-height: 1.5;
+    padding: 70px 0 30px;
+    font-weight: bold;
+}
+.title p{
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px;
+    padding-bottom: 70px;
+}
 
+
+.about .row .pic img{
+    width: 100%;
+}
+.about .row .txt{
+    padding: 0 20px;
+}
+.about .row .txt h2{
+    font-size: 28px;
+    line-height: 1.5;
+}
+.about .row .txt p{
+    font-size: 16px;
+    line-height: 2;
+}
+.about .row .list{
+    padding: 20px 0;
+}
+.about .row .list div{
+    padding: 10px 0px;
+}
+.about .row .list div::before{
+    content: '\f058';
+    color: #0061FF;
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    padding-right: 10px;
+}
+.about .wrap .row{
+    padding: 40px 0;
+}
+.about .wrap .row:not(:first-child){
+    border-top: 1px dotted #666;
+}
+.about .txt a{
+    color: blue;
+}
 
 
 
@@ -152,6 +200,14 @@
         justify-content: space-between;
         background-color: #ccc;
         align-items: center;
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
+    .list div{
+        width: 50%;
     }
     
 }
@@ -164,10 +220,11 @@
         border-bottom: none;
     }
     .header .row{
+        width: 960px;
         display: block;
     }
     .header .menu{
-        max-width: 1200px;
+        width: 960px;
         margin: auto;
     }
     .header nav{
@@ -195,48 +252,12 @@
     .menu nav a{
         padding: 0 10px;
     }
-
-}
-
-@media screen and (min-width:1200px) {
-    /* .header .row{
-        display: block;
-    } */
-    /* .header .menu{
-        width: 1200px;
-        margin: auto;
-    } */
-    /* .header nav{
-        position: relative;
-        left: 0;
-        display: flex;
-        width: auto;
-        height: auto;
-        top: 0;
-        background-color: transparent;
-        flex-grow: 1;
-    } */
-    /* .menu .free{
-        display: inline-block ;
-        background-color: blue;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
-    }
-    .menu .free a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 15px;
-    }
-    .menu nav a{
-        padding: 0 10px;
-    } */
     .banner{
         width: 100%;
         padding: 120px 0;
     }
     .banner .wrap{
-        width: 1200px;
+        width: 960px;
         margin: auto;
         display: flex;
         flex-direction: row-reverse;
@@ -253,4 +274,44 @@
     .banner .txt p{
         margin: 30px 0;
     }
+    .about .wrap{
+        width: 960px;
+        margin: auto;
+        font-size: 0;
+    }
+    .about .wrap .row:nth-child(odd){
+        direction: rtl;
+    }
+    .about .pic,.about .txt{
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1em;
+        font-size: 16px;
+        line-height: 2;
+        vertical-align: middle;
+        direction: ltr;
+    }
+    .about .wrap .row:nth-child(even) .txt{
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .header .row{
+        width: 1200px;
+        display: block;
+    }
+    .header .menu{
+        width: 1200px;
+        margin: auto;
+    }
+    .banner .wrap{
+        width: 1200px;
+    }
+    .about .wrap{
+        width: 1200px;
+    }
+
 }
