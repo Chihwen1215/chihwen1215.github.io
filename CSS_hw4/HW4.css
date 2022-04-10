@@ -31,26 +31,26 @@
 }
 .header .wrap{
     width: 100%;
-    background-color: #ccc;
+    background-color: #fff;
 }
 .header .menu{
     height: 50px;
     position: relative;
 }
-.logo{
+/* .logo{
     margin: 10px;
-}
+} */
 .logo img{
     display: block;
 }
 .menu_btn{
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background-color: #fff;
     display: block;
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 15px;
+    right: 25px;
 }
 .menu_btn span{
     opacity: 0;
@@ -64,7 +64,7 @@
     position: absolute;
     height: 2px;
     left: 2px;
-    width: 36px;
+    width: 30px;
     background-color: #000;
     top: 0;
     bottom: 0;
@@ -75,10 +75,10 @@
 .menu nav{
     width: 80%;
     height: calc(100vh - 50px);
-    background-color: #fcc;
+    background-color: #fff;
     position: absolute;
     top: 50px;
-    left: -100%;
+    right: -100%;
     transition: .5s;
     z-index: 2;
 }
@@ -86,14 +86,14 @@
     display: block;
     text-decoration: none;
     color: black;
-    padding: 10px 20px;
-    border-bottom: 1px solid black;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
 }
 .menu .free{
     display: none;
 }
 #menu_control:checked ~ .header .menu nav{
-    left: 0;
+    right: 0;
 }
 
 
@@ -310,33 +310,27 @@
 footer{
     background-color: #00142D;
     color: #fff;
-    position: relative;
 }
 footer .wrap a{
-    /* display: block; */
     padding: 10px 30px;
     font-size: 15px;
     color: #ccc;
-}
-footer .wrap p{
-    padding-bottom: 10px;
+    display: none;
 }
 footer .group{
     padding: 50px 20px;
 }
-footer .group .wrap:nth-child(1){
+footer .wrap:nth-child(2){
     border-top: 1px solid #ccc;
 }
-footer .group .wrap{
-    padding: 20px 0 10px;
+footer .wrap{
+    padding: 20px 0;
     border-bottom: 1px solid #ccc;
-}
-footer .wrap a{
-    display: none;
+    position: relative;
 }
 .group_control{
     position: absolute;
-    z-index: 2;
+    z-index: -1;
 }
 .group_control:checked + .wrap .ul a{
     display: block;
@@ -349,10 +343,14 @@ footer .wrap label::after{
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
     transform: rotate(45deg);
+    position: absolute;
+    right: 10px;
+    top: 25px;
 }
 .group_control:checked ~ .wrap label::after{
     transform: rotate(225deg);
 }
+
 
 
 
@@ -364,7 +362,7 @@ footer .wrap label::after{
     .header .menu{
         display: flex;
         justify-content: space-between;
-        background-color: #ccc;
+        background-color: #fff;
         align-items: center;
     }
     .list{
