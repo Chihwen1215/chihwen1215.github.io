@@ -377,9 +377,9 @@ footer .button a{
     padding: 30px 20px;
     text-align: center;
 }
-.icon{
-    display: flex;
-    justify-content: space-around;
+.icon a{
+    margin: 0 10px;
+    /* margin-right: 10px; */
 }
 .private{
     padding: 20px 0;
@@ -437,6 +437,22 @@ footer .button a{
     .private{
         display: flex;
         flex-wrap: wrap;
+    }
+    .private a{
+        padding-right: 10px;
+    }
+    .private a:not(:first-child)::before{
+        content: '|';
+        color: #748094;
+        padding-right: 10px;
+    }
+    .icon{
+        text-align: left;
+
+    }
+    .icon a{
+        display: inline-block;
+        margin-left: 1px;
     }
     
 }
@@ -562,17 +578,21 @@ footer .button a{
         flex-direction: row-reverse;
         margin: 0 -20px;
     }
+    .glob .wrap{
+        width: 960px;
+        margin: auto;
+        box-sizing: border-box;
+    }
     .glob .txt{
-        padding-left: 20px;
+        margin-left: -20px;
     }
-    footer .wrap a{
+    footer .group .wrap a{
         display: block;
-        /* margin: 0 -20px; */
     }
-    footer .wrap{
+    footer .group .wrap{
         border: none;
     }
-    footer .wrap:nth-child(2){
+    footer .group .wrap:nth-child(2){
         border: none;
     }
     footer .wrap label::after{
@@ -585,9 +605,32 @@ footer .button a{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    footer .ul{
-        margin-left: -30px;
+    footer label p{
+        margin-bottom: 30px;
     }
+    footer .ul
+    {
+        padding-left: 1px;
+        /* margin-left: -30px; */
+    }
+    footer .button{
+        margin-bottom: 20px;
+        text-align: right;
+    }
+    footer .foot{
+        display: none;
+    }
+
+    /* ooooooooooooooooooooooooooooooooooooooooooooooo */
+    .footer_menu .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer_menu .icon a{
+        text-align: center;
+    }
+
 }
 
 /* 桌機 */
@@ -616,10 +659,7 @@ footer .button a{
         width: 1200px;
         margin: auto;
     }
-    .glob .txt{
-        margin-left: -40px;
-    }
-    footer .group{
+    /* footer .group{
         width: 1200px;
-    }
+    } */
 }
