@@ -37,20 +37,20 @@
     height: 50px;
     position: relative;
 }
-/* .logo{
+.logo{
     margin: 10px;
-} */
+}
 .logo img{
     display: block;
 }
 .menu_btn{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-color: #fff;
     display: block;
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 5px;
+    right: 10px;
 }
 .menu_btn span{
     opacity: 0;
@@ -64,7 +64,7 @@
     position: absolute;
     height: 2px;
     left: 2px;
-    width: 30px;
+    width: 36px;
     background-color: #000;
     top: 0;
     bottom: 0;
