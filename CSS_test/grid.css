@@ -1,24 +1,13 @@
-:root{
-    --gap: 20px;
-}
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding-left: var(--gap);
-    padding-right: var(--gap);
-}
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(var(--gap) * -1);
-    margin-right: calc(var(--gap) * -1);
 }
 
-[class*='col-'] > .col , [class*='col-']{
+/* [class*='col-'] > .col , [class*='col-']{
     padding-left: var(--gap);
     padding-right: var(--gap);
     box-sizing: border-box;
-}
+} */
 .col-1 {width: 8.333333%;}
 .col-2 {width: 16.666666%;}
 .col-3 {width: 25%;}
