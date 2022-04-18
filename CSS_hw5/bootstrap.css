@@ -1,0 +1,27 @@
+nav{
+    background-color: #7952b3;
+}
+.navbar-brand path{
+    color: #fff;
+}
+.btn-primary{
+    background-color: #7952b3;
+    border-color: #7952b3;
+}
+.btn-secondary{
+    color: #6c757d;
+    border-color: #6c757d;
+}
+.card{
+    background-color: rgba(0,0,0,0.05);
+}
+.callout{
+    border: 1px solid #eee;
+    border-left-width: 5px;
+}
+.bd-callout-warning{
+    border-left-color: #f0ad4e;
+}
+.callout p{
+    margin: 20px;
+}
