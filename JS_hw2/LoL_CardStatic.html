@@ -2168,6 +2168,16 @@
         let container;
         let btnCreateHeroArray, btnListHero, btnTableHero;
 
+        // 創 table,thead,tbody
+        let table = document.createElement("table");
+        let thead = document.createElement("thead");
+        let tbody = document.createElement("tbody");
+        // thaedTR方法一 : title
+        let titles = ['ID', 'HeroName', 'Text', 'URL'];
+        // table 外觀
+        table.setAttribute("class", "table table-bordered table-striped table-dark");
+
+
         window.onload = function () {
             container =  document.querySelector("#container");
             btnCreateHeroArray = document.getElementById("createhero");
@@ -2185,12 +2195,14 @@
                 cards.forEach((card, index)=>{
                     let id = index +1;
                     let name = card.querySelector(".card-title").innerHTML;
+                    // let splits = name.split('');
                     let text = card.querySelector(".card-text").innerHTML;
                     let imgurl = card.querySelector("img").src;
 
                     let hero={
                         "id": id,
                         "name": name,
+                        // "name": splits[2],
                         "text": text,
                         "imgurl": imgurl
                     }
@@ -2226,6 +2238,60 @@
                 }
                 
                 alert("以表格呈現英雄人物資料！");
+
+                // // theadTR 方法一                
+                // let theadTR = document.createElement("tr");
+                // titles.forEach(title =>{
+                //     let th = document.createElement("th");
+                //     th.innerText = title;
+                //     theadTR.append(th);
+                // });
+                // thead.append(theadTR);
+                // table.append(thead);
+
+                // // tbodyTR 方法一
+                // heroArray.forEach(hero =>{
+                //     let tbodyTR = document.createElement("tr");
+                //     let tdId = document.createElement("td");
+                //     tdId.innerText = hero.id;
+                //     let tdName = document.createElement("td");
+                //     tdName.innerText = hero.name;
+                //     let tdText = document.createElement("td");
+                //     tdText.innerText = hero.text;
+                //     let tdImg = document.createElement("td");
+                //     tdImg.innerText = hero.imgurl;
+                //     tbodyTR.append(tdId, tdName, tdText, tdImg);
+                //     tbody.append(tbodyTR);
+                //     table.append(tbody);
+                // });
+                // container.append(table);
+
+
+                // theadTR 方法二
+                let theadTR = document.createElement("tr");
+                let titlesArray = Object.keys(heroArray[0]);
+                titlesArray.forEach(key =>{
+                    let th = document.createElement("th");
+                    th.innerText = key;
+                    theadTR.append(th);
+                });
+                thead.append(theadTR);
+                table.append(thead);
+
+                // tbodyTR 方法二
+                heroArray.forEach(hero =>{
+                    let tr = document.createElement("tr");
+                    let valuesArray = Object.values(hero);
+                    valuesArray.forEach(value =>{
+                        let td = document.createElement("td");
+                        td.innerText = value;
+                        tr.append(td);
+                    });
+                    tbody.append(tr);
+                });
+                table.append(tbody);
+                container.append(table);
+
             });
         }
 
