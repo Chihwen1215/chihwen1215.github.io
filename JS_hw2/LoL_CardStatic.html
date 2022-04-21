@@ -77,7 +77,7 @@
         <button class="btn btn-primary" id="tablehero">以表格呈現英雄人物資料</button>
     </div>
     <div id="result"></div>
-    <div id="container" class="row">
+    <div id="container" class="row m-0">
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" card-index="1">
             <div class="card" id="Aatrox">
                 <div class="headshot"> <img class="card-img-top"
@@ -2168,15 +2168,7 @@
         let container;
         let btnCreateHeroArray, btnListHero, btnTableHero;
 
-        // 創 table,thead,tbody
-        let table = document.createElement("table");
-        let thead = document.createElement("thead");
-        let tbody = document.createElement("tbody");
-        // thaedTR方法一 : title
-        let titles = ['ID', 'HeroName', 'Text', 'URL'];
-        // table 外觀
-        table.setAttribute("class", "table table-bordered table-striped table-dark");
-
+        
 
         window.onload = function () {
             container =  document.querySelector("#container");
@@ -2190,19 +2182,20 @@
                 alert("從DOM建立英雄人物陣列資料成功！");
                 
                 //1.從DOM建立英雄人物資料
+            
                 let cards = container.querySelectorAll(".card");
 
                 cards.forEach((card, index)=>{
                     let id = index +1;
                     let name = card.querySelector(".card-title").innerHTML;
-                    // let splits = name.split('');
+                    let splits = name.split(': ');
                     let text = card.querySelector(".card-text").innerHTML;
                     let imgurl = card.querySelector("img").src;
 
                     let hero={
                         "id": id,
-                        "name": name,
-                        // "name": splits[2],
+                        // "name": name,
+                        "name": splits[1],
                         "text": text,
                         "imgurl": imgurl
                     }
@@ -2210,7 +2203,7 @@
                 });
 
                 //2.清除container
-                document.querySelector("#container").innerHTML = "";
+                container.innerHTML = "";
             });
 
             btnListHero.addEventListener("click", function () {
@@ -2220,11 +2213,13 @@
                 }
                 //alert("以文字迭代英雄人物資料！");
 
+                    //清空資料
+                    container.innerHTML = "";
+                    //顯示在網頁上
                     heroArray.forEach((hero, index)=>{
                     let p = document.createElement("p");
                     p.innerText = JSON.stringify(hero);
-
-                    document.body.appendChild(p);
+                    container.appendChild(p);
                 });
 
 
@@ -2238,6 +2233,16 @@
                 }
                 
                 alert("以表格呈現英雄人物資料！");
+                container.innerHTML = "";
+
+                // 創 table,thead,tbody
+                let table = document.createElement("table");
+                let thead = document.createElement("thead");
+                let tbody = document.createElement("tbody");
+                // thaedTR方法一 : title
+                let titles = ['ID', 'HeroName', 'Text', 'URL'];
+                // table 外觀
+                table.setAttribute("class", "table table-bordered table-striped table-dark");
 
                 // // theadTR 方法一                
                 // let theadTR = document.createElement("tr");
@@ -2268,8 +2273,8 @@
 
 
                 // theadTR 方法二
-                let theadTR = document.createElement("tr");
                 let titlesArray = Object.keys(heroArray[0]);
+                let theadTR = document.createElement("tr");
                 titlesArray.forEach(key =>{
                     let th = document.createElement("th");
                     th.innerText = key;
