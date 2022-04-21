@@ -20,7 +20,8 @@
 
     <script>
         let container;
-        let i = 1;
+        let i;
+
         window.onload = function () {
             container = document.getElementById("container");
 
@@ -51,6 +52,7 @@
         }
 
         function allPokemon(){
+            container.innerHTML = "";
             for(let i=1; i<898; i++){
                 //若字串不為三位數前方補0
                 let fileName = i.toString().padStart(3, "0");
@@ -63,8 +65,6 @@
                 img.addEventListener("click",function(event){
                     container.removeChild(event.target);
                 });
-
-
                 container.append(img);
             }
         }
