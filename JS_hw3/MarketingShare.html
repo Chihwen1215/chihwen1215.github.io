@@ -97,7 +97,10 @@
 
         function createTbody(){
             marketingShare.data.forEach(data =>{
+                //抓 每一筆 data物件
                 let tr = document.createElement("tr");
+                // 創 valueArray陣列 存放data值
+                //ex: [1,"台積電","台灣",53.1]
                 let valueArray = Object.values(data);
                 valueArray.forEach(value =>{
                     let td = document.createElement("td");
