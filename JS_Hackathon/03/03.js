@@ -80,6 +80,7 @@ window.onload = function(){
         // 比次數
         if(a==4){
             AB.setAttribute("style", "background-color:green");
+            alert(`猜對了`)
         }
 
         //記錄使用者輸入的數字區(右)
