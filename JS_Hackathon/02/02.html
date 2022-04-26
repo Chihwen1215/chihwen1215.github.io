@@ -15,29 +15,64 @@
         }
         .container{
             padding: 15px;
+            height: 450px;
+            background-color: #8FB0A9;
         }
+        .row{
+            margin-bottom: 25px;
+        }
+        .input-group{
+            height: 80px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+        .delete{
+            background-color: #FDF0C4;
+            color: #000;
+            font-weight: bold;
+        }
+        .clear{
+            background-color: #FDF0C4;
+            color: #000;
+        }
+        .number{
+            background-color: #82A0C2;
+            color: #000;
+            font-weight: bold;
+        }
+        .operation{
+            background-color: #F7A992;
+            color: #000;
+            font-weight: bold;
+        }
+        .equal{
+            background-color: #F3CDA9;
+            color: #000;
+            font-weight: bold;
+        }
+        
     </style>
     <title>Hello, world!</title>
 </head>
 
 <body>
 
-    <div class="container border border-dark w-25 mt-5">
-        <div class="input-group mb-3">
+    <div class="container border border-dark border-1 w-25 mt-5 rounded-3">
+        <div class="input-group">
             <input id="input-text" type="text" class="form-control" value="">
         </div>
-        <div class="row mb-2">
+        <div class="row">
             <div class="col-6">
-                <button class="btn btn-danger clear" type="button">C</button>
+                <button class="btn btn-dark clear" type="button">C</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-warning delete" type="button">></button>
+                <button class="btn btn-dark delete" type="button">></button>
             </div>
             <div class="col-3">
-                <button class="btn btn-primary operation plus" type="button">+</button>
+                <button class="btn btn-dark operation plus" type="button">+</button>
             </div>
         </div>
-        <div class="row mb-2">
+        <div class="row">
             <div class="col-3">
                 <button class="btn btn-dark number" type="button">1</button>
             </div>
@@ -48,10 +83,10 @@
                 <button class="btn btn-dark number" type="button">3</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-primary operation minus" type="button">-</button>
+                <button class="btn btn-dark operation minus" type="button">-</button>
             </div>
         </div>
-        <div class="row mb-2">
+        <div class="row">
             <div class="col-3">
                 <button class="btn btn-dark number" type="button">4</button>
             </div>
@@ -62,10 +97,10 @@
                 <button class="btn btn-dark number" type="button">6</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-primary operation multiply" type="button">*</button>
+                <button class="btn btn-dark operation multiply" type="button">*</button>
             </div>
         </div>
-        <div class="row mb-2">
+        <div class="row">
             <div class="col-3">
                 <button class="btn btn-dark number" type="button">7</button>
             </div>
@@ -76,21 +111,21 @@
                 <button class="btn btn-dark number" type="button">9</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-primary operation division" type="button">/</button>
+                <button class="btn btn-dark operation division" type="button">/</button>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <button class="btn btn-success equal" type="button">=</button>
+                <button class="btn btn-dark equal" type="button">=</button>
             </div>
             <div class="col-3">
                 <button class="btn btn-dark number" type="button">0</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-info fw-bold number" type="button">.</button>
+                <button class="btn btn-dark fw-bold number dot" type="button">.</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-primary operation percent" type="button">%</button>
+                <button class="btn btn-dark operation percent" type="button">%</button>
             </div>
         </div>
     </div>
