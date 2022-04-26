@@ -15,27 +15,37 @@
         }
         .record{
             display: flex;
-
         }
         .AB{
             background-color: red;
+            border-radius: 0.25rem;
+            width: 70px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .recordInput{
+            padding-left: 15px;
+        }
+        h1{
+            text-align: center;
+            margin: 25px 0;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="item d-flex justify-content-between">
+        <h1>猜數字</h1>
+        <div class="item d-flex justify-content-between mb-4">
             <button type="button" class="btn btn-outline-primary w-25" id="btn1">Start</button>
             <button type="button" class="btn btn-outline-secondary w-25" id="btn2">Reset</button>
             <button type="button" class="btn btn-outline-success w-25" id="btn3">Answer</button>
         </div>
 
-        <div class="blank">
+        <div class="blank mb-4">
             <!-- 動態 -->
         </div>
 
-        <div class="input-group mb-3">
+        <div class="input-group">
             <span class="input-group-text" id="inputGroup-sizing-default">猜答案</span>
             <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Guess</button>
