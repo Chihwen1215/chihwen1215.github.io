@@ -195,7 +195,8 @@
 
             cloneCard.querySelector("img").src = picurl
             cloneCard.querySelector("h5").innerText = index+1 + " : "+ hero.id + " - " + hero.name
-            cloneCard.querySelector("p").innerText = hero.blurb
+            cloneCard.querySelector("p").innerText = `${hero.blurb.slice(0, 60)} ...`
+            
 
             //詳細按鈕 內文
             cloneCard.querySelector("a").addEventListener("click", function(){
