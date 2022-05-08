@@ -13,7 +13,7 @@
     <title>Hello, world!</title>
     <style>
         .container .pic img{
-            width: 100%;
+            width: 70%;
         }
         .nav-item{
             margin-right: 45px;
@@ -29,10 +29,23 @@
         }
         .txt button{
             background: #fff;
-            font-size: 18px;
+            font-size: 16px;
             border-radius: 0.25em;
-            margin: 0 10px 10px 0;
+            width: 150px;
+            height: 70px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
+        .color img{
+            width: 20%;
+        }
+        .money{
+            font-weight: bolder;
+            padding-top: 5px;
+            font-size: 20px;
+        }
+
+        
     </style>
 </head>
 
@@ -98,16 +111,16 @@
     <div class="container">
         <div class="item d-flex justify-content-between pt-1">
             <button type="button" class="btn btn-outline-secondary" id="iPadAir">iPadAir</button>
+            <div class="money"></div>
         </div>
     </div>
 
     <div class="container d-flex">
-        <div class="pic col-6">
+        <div class="pic col-6 text-center">
             <img src="https://raw.githubusercontent.com/chihwen1215/FileStorage/main/ipad-air-select.jpeg"
                 alt="iPadAll">
         </div>
         <div class="txt col-6"></div>
-        <div class="money"></div>
         
     </div>
 
@@ -118,17 +131,19 @@
         let pic = document.querySelector(".pic img");
         let txt = document.querySelector(".txt");
         let money = document.querySelector(".money");
-
+        let button2 = document.querySelectorAll(".txt div .color");
 
         //資料
         let ipadArray;
 
-        let ipadPic = []
-        ipadPic = ["./ipadAir_pic/ipad-air-select-cell-spacegray.png","./ipadAir_pic/ipad-air-select-cell-pink.png","./ipadAir_pic/ipad-air-select-cell-purple.png","./ipadAir_pic/ipad-air-select-cell-blue.png","./ipadAir_pic/ipad-air-select-cell-starlight.png"]
+        let ipadPic = ["./ipadAir_pic/ipad-air-select-cell-spacegray.png","./ipadAir_pic/ipad-air-select-cell-pink.png","./ipadAir_pic/ipad-air-select-cell-purple.png","./ipadAir_pic/ipad-air-select-cell-blue.png","./ipadAir_pic/ipad-air-select-cell-starlight.png"]
+
+        let btnPic = ["./ipadAir_pic/gray.png","./ipadAir_pic/pink.png","./ipadAir_pic/purple.png","./ipadAir_pic/blue.png","./ipadAir_pic/startlight.png"]
 
 
         window.onload = function () {
             // btn1.addEventListener("click", requestJSON1);
+
             requestJSON1();
 
         }
@@ -199,7 +214,7 @@
             make1Spec( '記憶體' , storages  ,'storage')
             make1Spec( '網路' , networks  ,'network')
 
-            function make1Spec(  title , array, key ){
+            function make1Spec( title , array, key ){
                 //創造 > 接上去 >設定
                 let h2
 
@@ -210,23 +225,44 @@
                 div.append(h3)
                 h3.innerText = title //`顏色`
 
-                array.forEach(value =>{
-                    let button = document.createElement("button")
+                array.forEach((value, index) =>{
+                    let button = document.createElement("button")                    
+                    button.setAttribute("class", key) //設定class名稱
+
+                    let btnPicTxt = document.createElement("span")
+                    btnPicTxt.setAttribute("class", "d-flex flex-column align-items-center")
+                    // button.append(span2)
+                    
+                    if(key == 'color'){
+                        let img = document.createElement("img")
+                        img.src=btnPic[index]
+                        btnPicTxt.appendChild(img)
+                        button.appendChild(btnPicTxt)
+                    }
                     div.append(button)
-                    button.innerText = `${value}`
+                    
+                    let span = document.createElement("span")
+                    span.innerText = value
+                    btnPicTxt.appendChild(span)
+                    button.appendChild(btnPicTxt)
+                    // button.innerHTML += `${value}`
+                    
+
 
                     button.addEventListener("click", function(){
+                        if(key == 'color'){
+                            pic.src = ipadPic[index]
+                        }
+
                         choosedValue[key] = value
                         console.log(choosedValue)
                         
                         changeImgMoney()
                     })
-
                 })
-
-
             }
         }
+
 
         //1. 點擊後 改變自己那一組 選到的變數
         //2. 拿各組選到的值 去塞資料
@@ -243,9 +279,9 @@
             //if(檢查沒過關) return 跳過
             if(matchData.length != 1) return
 
-            pic.setAttribute("src", matchData[0].picture)
+            // pic.setAttribute("src", matchData[0].picture)
             pic.setAttribute("alt", matchData[0].picture)
-            money.innerText = matchData[0].price
+            money.innerText = `NT$${matchData[0].price}`
 
             // if( 正常){
             //     做事
