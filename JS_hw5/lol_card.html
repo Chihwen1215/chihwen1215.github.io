@@ -212,6 +212,11 @@
 
             //影片按鈕 影片
             cloneCard.getElementById("videoButton").addEventListener("click", function(){
+                const iframe = document.querySelector("iframe")
+                let modal_vedio = document.querySelector("#videoModal")
+                modal_vedio.querySelector("h5").innerText = index+1 + " : " + hero.id + " - " + hero.name
+                let cardKey = hero.key.padStart(4, '0')
+                iframe.src = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${cardKey}/ability_${cardKey}_P1.mp4`
             });
 
             cloneCard.getElementById("tag1").innerText = hero.tags[0]
