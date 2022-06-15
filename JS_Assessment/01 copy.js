@@ -70,6 +70,7 @@ function getButton(dataObj, index) {
         localStorage.setItem(key, JSON.stringify(dataArray))
         //代辦事項裡的輸入框要鎖定
         inputText.disabled = true
+        
     })
 
     //刪除按鈕
