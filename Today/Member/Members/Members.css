@@ -55,9 +55,9 @@
 
 
 /* 基本資料 */
-/* #profile{
+#profile{
     display: none;
-} */
+}
 .addtraveler{
     padding: 30px;
 }
@@ -74,9 +74,9 @@
     margin: 10px 0;
 }
 /* 尚未建立常用旅客資料 */
-.buddy-group .addtraveler{
+/* .buddy-group .addtraveler{
     display: none;
-}
+} */
 .addtraveler-heading h4{
     font-weight: bolder;
 }
